@@ -12,5 +12,6 @@ exports.postAddProduct = async (req, res) => {
 
 exports.fetchAll = async (req, res) => {
     const products = await Product.fetchAll();
+    
         res.render("products", {products});
 };
